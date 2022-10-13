@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site__header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo"> <img src="./images/book.png" alt=" book image site logo" width="50"
+                        height="50"></a>
+                <input type="text" class="header__inp" placeholder="Search by name">
+
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__title__wrapper">
+                        <h2 class="hero__ttile"> Reading is dreaming with open eyes</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="books">
+            <div class="container">
+                <div class="books__inner">
+                    <h2 class="books__title"> Choose yours </h2>
+                    <div class="books__bar">
+
+                        <div class="books__bar__list">
+
+                            <select class="header__select book__name">
+
+                                <option value="disbled" disabled selected> Sort by <strong>Name</strong> </option>
+                                <option value="A to Z"> From A to Z</option>
+                                <option value="Z to A"> From Z to A</option>
+                            </select>
+                            <select class="header__select book__year">
+
+                                <option value="disbled" disabled selected> Sort by <strong> Year</strong></option>
+                                <option value="2022"> From -1700 to 2022 year</option>
+                                <option value="1"> From 2022 to -1700 year</option>
+                            </select>
+                            <select class="header__select book__page">
+
+                                <option value="disbled" disabled selected> Sort by <strong>Page</strong> </option>
+                                <option value="less"> From 68 to 2000</option>
+                                <option value="more"> From 2000 to 68</option>
+                            </select>
+                            <select class="header__select book__lang">
+
+                                <option value="disbled" disabled selected> Sort by <strong>Language</strong> </option>
+                                <option value="A to Z"> From A to Z</option>
+                                <option value="Z to A"> From Z to A</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <ul class="books__list">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./books.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
